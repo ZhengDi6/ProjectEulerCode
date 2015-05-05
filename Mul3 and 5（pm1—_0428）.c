@@ -1,16 +1,24 @@
 /*If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.Find the sum of all the multiples of 3 or 5 below 1000.*/
 
-#include<stdio.h>//Í·ÎÄ¼ş
-main()//¶¨ÒåÁËÒ»¸öÖ÷º¯Êı
+/*
+åˆ†æçš„æ€è·¯ï¼š
+ç¬¬ä¸€æ­¥ï¼š
+ç¬¬äºŒæ­¥ï¼š
+ç¬¬ä¸‰æ­¥ï¼š
+ç¬¬Næ­¥
+*/
+
+#include<stdio.h>//å¤´æ–‡ä»¶
+main()//å®šä¹‰äº†ä¸€ä¸ªä¸»å‡½æ•°
 {
-	int sum=0;//¶¨ÒåÁËÒ»¸öint±äÁ¿sun×÷ÎªºÍ
-	for (int i = 0; i < 1001; i++)//Ñ­»·°ÑÃ¿Ò»¸ö·ûºÏÌõ¼şµÄÖµ¶¼¼ÓÆğÀ´
+	int sum=0;//å®šä¹‰äº†ä¸€ä¸ªintå˜é‡sunä½œä¸ºå’Œ
+	for (int i = 0; i < 1001; i++)//å¾ªç¯æŠŠæ¯ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„å€¼éƒ½åŠ èµ·æ¥
 	{
 		if (i%3==0|i%5==0)
 		{
 			sum += i;
 		}
 	}
-	printf("%d",sum);//ÏòÆÁÄ»´òÓ¡sunµÄÖµ
-	getchar();//ÔİÍ£
+	printf("%d",sum);//å‘å±å¹•æ‰“å°sunçš„å€¼
+	getchar();//æš‚åœ
 }
